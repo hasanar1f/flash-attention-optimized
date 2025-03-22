@@ -2,6 +2,16 @@
 #include <cuda.h>
 #include <cuda_runtime.h>
 
+
+/*
+Original Flash Attn implementation
+
+Self CPU time total: 10.400ms
+Self CUDA time total: 6.446ms
+
+*/
+
+
 __global__
 void forward_kernel(const float* Q, const float* K, const float* V, const int N, const int d,
                     const int Tc, const int Tr, const int Bc, const int Br, const float softmax_scale,
