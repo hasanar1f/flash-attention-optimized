@@ -6,6 +6,9 @@ The official [implementation](https://github.com/Dao-AILab/flash-attention) can 
 * The entire forward pass is written in ~100 lines in `flash.cu`.
 * The variable names follow the notations from the original [paper](https://arxiv.org/abs/2205.14135).
 
+## Profile with NCU
+* ncu python bench.py
+
 ## Usage
 ### Prerequisite
 * PyTorch (with CUDA)
